@@ -49,6 +49,21 @@ else{
 res.send("failed")
 }
 });
+
+app.post('/register',(req,res)=>{
+    var name=req.body.name;
+    var college=req.body.college;
+    var id=req.body.id;
+    //if(name=='asil'&&college=='ict'&&id==123){
+        //res.send("successfully")
+
+    //}
+    //else{
+//res.send("Failed")
+
+    //}
+    res.send(name+college+id)
+});
 app.listen(process.env.PORT || 2500,()=>{    //checking for running of this port 
     console.log('running succesfully')
 });
