@@ -49,6 +49,6 @@ else{
 res.send("failed")
 }
 });
-app.listen(2500,()=>{    //checking for running of this port 
+app.listen(process.env.PORT || 2500,()=>{    //checking for running of this port 
     console.log('running succesfully')
 });
